@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shotcut icon" type="x-icon" href="./atrevidus_logo.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Atrevidus Nerd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="circle">
+            <div class="logo"></div>
+            <div class="text">
+                <p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">ATREVIDUS NERD - ATREVIDUS NERD -</p>
+            </div>
+        </div>
+        <ul id="main">
+            <li><b>Home</b></li>
+            <li><b>Sobre</b></li>
+            <li><b>Especiais</b>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="drop">
+                    <div>
+                        <li>Olho por Olho,<br> Nerd por Nerd</li>
+                        <li>Quase Meia Noite</li>
+                        <li>Me Chame de<br> Atrevido</li>
+                    </div>
+                </ul>
+            </li>
+            <li><b>Contatos</b></li>
+            <label class="toggle">
+                <input type="checkbox" onclick="toggleDarkLight()">
+                <span class="slider round"></span>
+            </label>
+            <script>
+                function toggleDarkLight(){
+                    var element = document.body;
+                    element.classList.toggle("dark-mode")
+                }
+            </script>
+        </ul>
+    </nav>
+<script>
+    const text = document.querySelector('.text p');
+    text.innerHTML = text.innerText.split("").map(
+        (char, i)=> `<span style="transform:rotate(${i*10.3}deg)">${char}</span>`).join("")
+</script>
+</header>
+<div class="container"></div>
+<div id="corpo">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="dr doom.png">
+            <h4>Dr Doom</h4>
+            </div>
+            <div class="flip-card-back">
+                <img src="./reed richards.png">
+                <h3>Sr Fantástico</h3>
+                
+            </div>
+        </div>
+    </div>
+    <div>
+        <h1>Atrevidus Nerd</h1>
+        <h2>Atrevidus Nerd</h2>
+        <h3>Atrevidus Nerd</h3>
+        <h4>Atrevidus Nerd</h4>
+        <h5>Atrevidus Nerd</h5>
+        <h5>Atrevidus Nerd</h5>
+        <h4>Atrevidus Nerd</h4>
+        <h3>Atrevidus Nerd</h3>
+        <h2>Atrevidus Nerd</h2>
+        <h1>Atrevidus Nerd</h1>
+    </div>
+
+        
+    <h1 align="center"> Doutor Destino x Sr. Fantástico</h1>
+        
+   <p>
+       &nbsp;Victor Von Doom, o soberano da <em>Latvéria</em> ao entrar 
+       em contato com Reed Richards no Edifício Baxter,
+        descobriu um rival em potencial.
+   </p>
+   <p>
+       &nbsp;Richards por sua vez, não queria Doom como
+        inimigo e sim como <strong>Aliado.</strong> Mas 
+        Von Doom só o via como um <br><b>obstáculo.</b>
+   </p>
+    
+    <P> &nbsp;Foi então que houve uma explosão que feriu o rosto de Von Doom, mas também abriu uma 
+        fenda para a  <abbr titte="ZONA NEGATIVA">ZN</abbr>  o que trouxe um vislumbre 
+        de outros mundos.</P>
+        <h3>
+           A Zona Negativa
+        </h3>
+       <p>
+       &nbsp; A Zona Negativa era composta por criaturas nunca vistas antes, e elas eram governadas por dois ditadores que digladiavam entre si:
+       </p>
+       <dl>
+           <dt> <b>O Aniquilador:</b></dt>
+           <dd>Usava o bastão cósmico para se manter como o rei da Zona Negativa.</dd>
+       </dl>
+       <dt><b>Blaastar:</b></dt>
+       <dd>Com seus dedos que disparavam raios de energia, tentava usurpar o título.</dd>
+    
+</body>
+<footer><b>Desenvolvido por Samir Damaiceno</b></footer>
+</html>
